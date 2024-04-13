@@ -69,6 +69,7 @@
 	color: white;
 	line-height: 50px;
 	border-radius: 12px;
+	outline: none;
 	cursor: pointer;
 	transition: 0.2s;
 	background: white;

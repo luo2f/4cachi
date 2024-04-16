@@ -10,26 +10,31 @@
 	<meta http-equiv="Pragma" content="no-cache">
 	<meta http-equiv="Cache-control" content="no-cache">
 	<meta http-equiv="Cache" content="no-cache">
-	<title>视频课库</title>
+	<title>视频库</title>
 	<link rel="stylesheet" href="mui-player.min.css">
 	<script src="mui-player.min.js"></script>
 </head>
 
 <body>
-	<div id="mui-player" style="max-width: 600px;margin: auto"></div>
+	<div id="player-1" style="max-width: 600px;margin: 15px"></div>
+	<div id="player-2" style="max-width: 600px;margin: 15px"></div>
+	<div id="player-3" style="max-width: 600px;margin: 15px"></div>
 </body>
-
 <script>
-	var config = window.playerConfig;
-
-	console.log(config);
-	var mp = new MuiPlayer(config);
-</script>
-<script>
-	var mp = new MuiPlayer({
-		container: '#mui-player',
+	var v1 = new MuiPlayer({
+		container: '#player-1',
 		title: '2024.4.15',
-		src: './video/video.mp4',
+		src: './video/1.mp4',
+	});
+	var v2 = new MuiPlayer({
+		container: '#player-2',
+		title: '2024.4.16',
+		src: './video/2.mp4',
+	});
+	var v3 = new MuiPlayer({
+		container: '#player-3',
+		title: '2024.4.16',
+		src: './video/3.mp4',
 	})
 </script>
 
